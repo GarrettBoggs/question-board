@@ -3,7 +3,7 @@
 <h3> {{model.content}} </h3>
 
 {{#each model.answers as |answer|}}
-  {{answer-tile answer=answer}}
+  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
 {{/each}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
