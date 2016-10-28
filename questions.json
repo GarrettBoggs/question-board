@@ -6,6 +6,13 @@
   "author": "Me",
   "content": "What is the best programming language?",
   "notes": "Correct Answer: All of them"
+  }],
+  "answers": [{
+    "author": "Gus",
+    "content": "I'm not too sure"
+  },
+  { "author": "Epicoder",
+    "content": "Javascript!"
   }]
 
 }

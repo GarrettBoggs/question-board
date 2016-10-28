@@ -1,11 +1,18 @@
 <h1> Welcome to Question/Answer Board </h1>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      <li>{{question.author}}</li>
      {{#link-to 'question' question.id}} <li>{{question.content}}</li>
      {{/link-to}}
      <li>{{question.notes}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.author}}</li>
+    <li>{{answer.content}}</li>
   {{/each}}
 </ul>
 
