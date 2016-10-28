@@ -6,7 +6,7 @@ This README outlines the details of collaborating on this Ember application.
 
 ## Description
 
-This is a basic message board in questions can be added. Users are able to answer the questions as they please.
+This is a basic message board where questions can be added. Users are able to answer the questions as they please.
 
 
 ## Prerequisites
@@ -45,10 +45,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Specs
 
     **Questions can be created**
@@ -59,17 +55,18 @@ Specify what it takes to deploy your app.
     **Questions have their own page**
 
     * Example input: User clicks a question
-    * Example output: They are taken to a new page. 
+    * Example output: They are taken to a new page.
 
     **Answers can be created**
 
     * Example input: Author: Me, Answer: Gray!
-    * Example output: Answer will display the author and the color
+    * Example output: Answer will display the author and the color on that specific question's page
 
     **Questions can be edited**
 
     * Example input: user changes question to: What is your favorite animal?
     * Example output: Question: What is your favorite animal?
+
 
 
 ## Further Reading / Useful Links
