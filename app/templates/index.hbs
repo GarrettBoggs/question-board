@@ -1,0 +1,9 @@
+<h1> Welcome to Question/Answer Board </h1>
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}}</li>
+     <li>{{question.content}}</li>
+     <li>{{question.notes}}</li>
+  {{/each}}
+</ul>

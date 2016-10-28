@@ -1,0 +1,11 @@
+{ "questions": [{
+  "author": "Hamlet",
+  "content": "To be or not to be?",
+  "notes": "This is rather vague out of context"
+  },{
+  "author": "Me",
+  "content": "What is the best programming language?",
+  "notes": "Correct Answer: All of them"
+  }]
+
+}
