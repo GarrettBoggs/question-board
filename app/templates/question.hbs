@@ -3,8 +3,7 @@
 <h3> {{model.content}} </h3>
 
 {{#each model.answers as |answer|}}
-  <li> {{answer.author}} </li>
-  <li> {{answer.content}} </li>
+  {{answer-tile answer=answer}}
 {{/each}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
