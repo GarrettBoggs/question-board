@@ -1,7 +1,13 @@
 # Question-board
 
+#### By Garrett Boggs
+
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+## Description
+
+This is a basic message board in questions can be added. Users are able to answer the questions as they please.
+
 
 ## Prerequisites
 
@@ -43,6 +49,29 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+## Specs
+
+    **Questions can be created**
+
+    * Example input: Author: Me Question: What is your favorite color? Notes: This is a hard one
+    * Example output: Question created with all three data fields
+
+    **Questions have their own page**
+
+    * Example input: User clicks a question
+    * Example output: They are taken to a new page. 
+
+    **Answers can be created**
+
+    * Example input: Author: Me, Answer: Gray!
+    * Example output: Answer will display the author and the color
+
+    **Questions can be edited**
+
+    * Example input: user changes question to: What is your favorite animal?
+    * Example output: Question: What is your favorite animal?
+
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -51,3 +80,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+## Licensing
+
+  * This project is licensed under the terms of the MIT license.

@@ -1,6 +1,8 @@
-<h2> {{model.author}} </h2>
+<h2> Author: {{model.author}} </h2>
 
 <h3> {{model.content}} </h3>
+
+<p> Additional notes: {{model.notes}} </p>
 
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
