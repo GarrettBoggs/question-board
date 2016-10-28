@@ -1,5 +1,5 @@
-<li> {{answer.author}} </li>
-<li> {{answer.content}} </li>
+User: {{answer.author}} <br>
+Message: {{answer.content}}
 
 {{update-answer answer=answer update="update"}}
-<button {{action 'delete' answer}}> Delete Comment </button>
+<button class="btn btn-default" {{action 'delete' answer}}> Delete Comment </button>
