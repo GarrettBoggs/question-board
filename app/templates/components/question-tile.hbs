@@ -2,3 +2,4 @@
 {{#link-to 'question' question.id}} <li>{{question.content}}</li>
 {{/link-to}}
 {{update-question question=question update="update"}}
+<button {{action 'delete' question}}> Delete Question</button>
