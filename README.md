@@ -22,14 +22,14 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone https://github.com/GarrettBoggs/question-board` this repository
-* change into the new directory
+* change into the question-board directory
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit question-board app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
 
