@@ -1,0 +1,19 @@
+{{#if updateAnswerForm}}
+  <h4>Update</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author placeholder=answer.author"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{input value=content id="content placeholder=answer.content"}}
+      </div>
+
+      <button class="btn btn-default" {{action 'update' answer}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-default" {{action 'updateAnswerForm'}}>Update </button>
+{{/if}}
