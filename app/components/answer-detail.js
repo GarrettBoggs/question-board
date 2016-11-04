@@ -2,10 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-    totalAnswers: Ember.computed('model.answers', function() {
-    console.log(this.get('model.answers'));
-    return this.get('model.answers');
-  }),
+    sortBy: ['upvote:desc'],
+    sortAnswers: Ember.computed.sort('model.answers', 'sortBy'),
 
   actions: {
 
@@ -23,6 +21,6 @@ export default Ember.Component.extend({
           question.save();
           this.transitionTo('question');
         },
-      
+
     }
 });

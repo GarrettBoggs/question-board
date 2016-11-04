@@ -10,6 +10,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
+        upvote: this.get('upvote'),
       };
       this.set('updateAnswerForm',false);
       console.log(params);

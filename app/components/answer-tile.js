@@ -10,15 +10,17 @@ export default Ember.Component.extend({
       update(answer, params) {
         this.sendAction('update', answer, params);
        },
-      like(){
+      like(answer){
         var originalUpvote = this.get('answer.upvote');
         originalUpvote += 1;
         this.set('answer.upvote', originalUpvote);
+        answer.save();
       },
-      dislike(){
+      dislike(answer){
         var originalUpvote = this.get('answer.upvote');
         originalUpvote -= 1;
         this.set('answer.upvote', originalUpvote);
+        answer.save();
       },
     }
 
