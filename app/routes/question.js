@@ -14,10 +14,6 @@ export default Ember.Route.extend({
         });
         this.transitionTo('question', question);
       },
-        destroyAnswer(answer){
-          answer.destroyRecord();
-          this.transitionTo('index');
-        },
 
         update(question, params) {
         Object.keys(params).forEach(function(key) {

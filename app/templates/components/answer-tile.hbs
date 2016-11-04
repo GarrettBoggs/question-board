@@ -1,5 +1,8 @@
 User: {{answer.author}} <br>
 Message: {{answer.content}}
+<button class="btn btn-success" {{action 'like' answer}}>+</button>
+<button class="btn btn-danger" {{action 'dislike' answer}}>-</button>
+{{answer.upvote}}
 
 {{update-answer answer=answer update="update"}}
 <button class="btn btn-default" {{action 'delete' answer}}> Delete Comment </button>
