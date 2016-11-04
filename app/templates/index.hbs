@@ -1,11 +1,13 @@
-<h1> Welcome to Question/Answer Board </h1>
+<div class='mainPage'>
+  <h1> Welcome to Question/Answer Board </h1>
 
-<ul>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-    <div class="warning">{{question-empty question}}</div>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model.questions as |question|}}
+      {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+      <div class="warning">{{question-empty question}}</div>
+    {{/each}}
+  </ul>
+</div>
 
 {{display-favorites}}
 
