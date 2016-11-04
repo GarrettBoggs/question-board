@@ -5,6 +5,9 @@ export default Ember.Component.extend({
     sortBy: ['upvote:desc'],
     sortAnswers: Ember.computed.sort('model.answers', 'sortBy'),
 
+    totalAnswers: Ember.computed('model.answers', function(){
+      return this.get('model.answers').get('length');
+    }),
   actions: {
 
       destroyAnswer(answer){

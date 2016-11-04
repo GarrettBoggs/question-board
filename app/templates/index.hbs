@@ -3,7 +3,7 @@
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-    {{question-empty question}}
+    <div class="warning">{{question-empty question}}</div>
   {{/each}}
 </ul>
 
