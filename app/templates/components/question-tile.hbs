@@ -4,3 +4,5 @@
 <p>Written by: {{question.author}} </p>
 {{update-question question=question update="update"}}
 <button class="btn btn-default" {{action 'delete' question}}> Delete Question</button>
+
+<button {{action 'addFavorite' question}}>Add as Favorite</button>
